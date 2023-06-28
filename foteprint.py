@@ -6,7 +6,6 @@ def os_fingerprint(ip_range):
 
     for ip in ip_range:
         result = nm.scan(ip, arguments=arguments)
-
         if 'osmatch' in result['scan'][ip]:
             print(f"IP: {ip}")
             for os in result['scan'][ip]['osmatch']:
