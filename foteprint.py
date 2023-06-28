@@ -1,5 +1,4 @@
 import nmap
-
 def os_fingerprint(ip_range):
     nm = nmap.PortScanner()
     arguments = '-O -Pn'  # Enable OS detection and disable ping scan
